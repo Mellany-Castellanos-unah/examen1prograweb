@@ -319,6 +319,57 @@
 
     </section>
 
+    <section id="Cotizaciones">
+        <div>
+            <h2>Calculadora de Cotizaciones</h2>
+            <span> Descuento comerical del 8% automatico en ordenes de 5 o mas unidades </span>
+        </div>
+
+        <div>
+            <form action="#", method="post", enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Datos de Cotizacion</legend>
+                    <label> Ingrese cantidad de unidades a comprar</label>
+                     <input type="number" name="unidades" id="unidades">
+
+                    <label>Escoga el equipo industrial</label>
+                    <select id="opcion_equipo" name="opcion_equipo">
+                        <option>Panel solar de 50W</option>
+                        <option>Bateria de litio 12V 50Ah</option>
+                        <option>Inversor solar hibrido 10kW HUAWEI</option>
+                        <option>Controlador de carga solar 30A lifePo4</option>
+                        <option>SQUARE-D breaker industrial POWERPACT 1000A 600V</option>
+                        <option>Cable de cobre NM-B de 6/2 con tierra, calibre 6 MOOKEERF</option>
+                        <option>Interruptor switch doble 10a 125v aguila 2260</option>
+                        <option>Jeen III - Lámpara colgante de interior acabado blanco</option>
+                        <option>Abrazadera doble tipo MB4 para cable Al #500</option>
+                        <option>Cono de alivio de 15KV P/C COBRE #1/0</option>
+                        <option>Abrazadera tipo MB4 para cable de cobre #1/0</option>
+                        <option>Bota de conexion de 15KV para cable #2</option>
+                        <option>Motor 4T 6.5Hp Gasolina Total Tgen16821</option>
+                        <option>Generador electrico 800W 2T</option>
+                        <option>Generador electrico 15000w 21hp total 1150006</option>
+                    </select>
+
+                    <label>Ciudad de entrega</label>
+                    <select>
+                        <option>San Pedro Sula | Flete: L.500</option>
+                        <option>Tegucigalpa | Flete: L. 1,200</option>
+                        <option>Otras regiones | Flete: L.2000</option>
+                    </select>
+            
+                </fieldset>
+
+                <button>Calcular Presupuesto</button>
+            </form>
+
+            <div>
+                <p>El total estimado de su cotizacion es de L. 5000  </p>
+            </div>
+
+        </div>
+    </section>
+
     <section id="ofertas">
         <h2> Ofertas disponibles!!!</h2>
             <article id="productos_solares1">
@@ -434,11 +485,14 @@
 
     <section id="contacto">
         <form action="#", method="post", enctype="multipart/form-data">
+            <fieldset>
+                <legend>Formulario de Contacto</legend>
+            
             <label>Nombre de la empresa </label>
-            <input type="text">
+            <input type="text" name="nombre_empresa" id="nombre_empresa">
 
             <label>RTN numerico</label>
-            <input type="number">
+            <input type="text" >
 
             <label>Correo</label>
             <input type="email">
@@ -448,17 +502,20 @@
 
             <label>Departamento de entrega</label>
             <select>
-                <option></option>
-                <option></option>
-                <option></option>
+                <option>Cortes</option>
+                <option>Francisco Morazan</option>
+                <option>Comayagua</option>
                 <option></option>
             </select>
 
             <label>Acepta las condiciones</label>
-            <input type="checkbox" name="condiciones_si" value="true">
-            <input type="checkbox" name="condiciones_si" value="true">
+            <input type="checkbox" name="condiciones" id="condiciones">
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
 
 
+            </fieldset>
         </form>
     </section>
 
