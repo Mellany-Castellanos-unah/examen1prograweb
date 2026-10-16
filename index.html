@@ -405,7 +405,7 @@
             <article class="bg-white rounded-xl shadow-md overflow-hidden border border-blue-100 flex flex-col justify-between p-5">
                 <div>
                 <h2 class="text-lg font-bold text-blue-950 mb-2"> Cable de cobre NM-B de 6/2 con tierra, calibre 6 MOOKEERF </h2>
-                <img src="imagenes/productoelectrico2.jpg" alt="imagen de producto electrico" width="400" height="300" class="w-full h-48 object-cover rounded-lg mb-3">
+                <img src="imagenes/productoelectrico2.jpg" alt="imagen de producto electrico" width="400" height="300" class="max-h-full w-auto object-contain">
                 <p class="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">Categoria: Productos electricos</p>
                 <span class="inline-block bg-red-600 text-white text-xs font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3">Oferta</span>
                 </div>
@@ -417,7 +417,7 @@
 
             <article class="bg-white rounded-xl shadow-md overflow-hidden border border-blue-100 flex flex-col justify-between p-5">
                 <h2 class="text-lg font-bold text-blue-950 mb-2">Cono de alivio de 15KV P/C COBRE #1/0 Y 4/0, modelo R2T15M1, marca THOMAS & BETTS</h2>
-                <img src="imagenes/productomediatension2.jpeg" alt="productos de media tension" width="400" height="300" class="w-full h-48 object-cover rounded-lg mb-3">
+                <img src="imagenes/productomediatension2.jpeg" alt="productos de media tension" width="400" height="300" class="max-h-full w-auto object-contain">
                 <p class="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">Categoria: producto de media tension</p>
                 <span class="inline-block bg-red-600 text-white text-xs font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3">Oferta</span>
                 <div id="precios_oferta" class="flex items-baseline gap-3 bg-blue-50/50 p-3 rounded-lg border border-blue-100 mt-auto">
@@ -429,7 +429,7 @@
 
              <article class="bg-white rounded-xl shadow-md overflow-hidden border border-blue-100 flex flex-col justify-between p-5">
                 <h2 class="text-lg font-bold text-blue-950 mb-2">Generador electrico 800W 2T</h2>
-                <img src="imagenes/productofuerzamotriz2.webp" alt="imagen de producto fuerza motriz " width="400" height="300" class="w-full h-48 object-cover rounded-lg mb-3">
+                <img src="imagenes/productofuerzamotriz2.webp" alt="imagen de producto fuerza motriz " width="400" height="300" class="max-h-full w-auto object-contain">
                 <p class="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">Categoria: Fuerza Motriz</p>
                 <span class="inline-block bg-red-600 text-white text-xs font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider mb-3">Oferta</span>
                 <div id="precios_oferta" class="flex items-baseline gap-3 bg-blue-50/50 p-3 rounded-lg border border-blue-100 mt-auto">
@@ -440,21 +440,21 @@
             </article>
     </section>
 
-     <section id="cotizaciones">
-        <div>
-            <h2>Calculadora de Cotizaciones</h2>
-            <span> Descuento comerical del 8% automatico en ordenes de 5 o mas unidades </span>
+     <section id="cotizaciones" class="max-w-4xl mx-auto px-4 py-12">
+        <div class="text-center mb-6">
+            <h2 class="text-3xl font-extrabold text-blue-950 mb-2">Calculadora de Cotizaciones</h2>
+            <span class="inline-block bg-yellow-100 text-blue-900 border border-yellow-300 text-xs md:text-sm font-bold px-4 py-1.5 rounded-full shadow-sm"> Descuento comerical del 8% automatico en ordenes de 5 o mas unidades </span>
         </div>
 
         <div>
-            <form action="#", method="post", enctype="multipart/form-data">
-                <fieldset>
-                    <legend>Datos de Cotizacion</legend>
-                    <label> Ingrese cantidad de unidades a comprar</label>
-                     <input type="number" name="unidades" id="unidades">
+            <form action="#", method="post", enctype="multipart/form-data" class="space-y-6">
+                <fieldset class="border border-blue-200 rounded-xl p-6 bg-blue-50/30">
+                    <legend class="text-lg font-bold text-blue-950 px-3 bg-white rounded-md border border-blue-100 shadow-sm">Datos de Cotizacion</legend>
+                    <label class="block text-sm font-semibold text-blue-950"> Ingrese cantidad de unidades a comprar</label>
+                     <input type="number" name="unidades" id="unidades" class="w-full bg-white border border-blue-200 rounded-lg px-4 py-2 text-blue-950 focus:outline-none focus:ring-2 focus:ring-blue-600 shadow-sm">
 
-                    <label>Escoga el equipo industrial</label>
-                    <select id="opcion_equipo" name="opcion_equipo">
+                    <label class="block text-sm font-semibold text-blue-950">Escoga el equipo industrial</label>
+                    <select id="opcion_equipo" name="opcion_equipo" class="w-full bg-white border border-blue-200 rounded-lg px-4 py-2 text-blue-950 focus:outline-none focus:ring-2 focus:ring-blue-600 shadow-sm">
                         <option>Panel solar de 50W</option>
                         <option>Bateria de litio 12V 50Ah</option>
                         <option>Inversor solar hibrido 10kW HUAWEI</option>
@@ -472,8 +472,8 @@
                         <option>Generador electrico 15000w 21hp total 1150006</option>
                     </select>
 
-                    <label>Ciudad de entrega</label>
-                    <select>
+                    <label class="block text-sm font-semibold text-blue-950">Ciudad de entrega</label>
+                    <select class="w-full bg-white border border-blue-200 rounded-lg px-4 py-2 text-blue-950 focus:outline-none focus:ring-2 focus:ring-blue-600 shadow-sm">
                         <option>San Pedro Sula | Flete: L.500</option>
                         <option>Tegucigalpa | Flete: L. 1,200</option>
                         <option>Otras regiones | Flete: L.2000</option>
@@ -481,11 +481,11 @@
             
                 </fieldset>
 
-                <button>Calcular Presupuesto</button>
+                <button class="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-xl transition shadow-md cursor-pointer">Calcular Presupuesto</button>
             </form>
 
-            <div>
-                <p>El total estimado de su cotizacion es de L. 5000  </p>
+            <div class="mt-6 p-4 bg-blue-900/5 border border-blue-200 rounded-xl text-center shadow-inner">
+                <p class="font-mono text-lg font-bold text-blue-950 tracking-wide">El total estimado de su cotizacion es de L. 5000  </p>
             </div>
 
         </div>
@@ -493,112 +493,118 @@
 
     
 
-    <section>
-        <h2>Tabla comparativa de </h2>
-        <table>
-            <thead>
+    <section id="tabla_tecnica" class="max-w-7xl mx-auto px-4 py-12 overflow-x-auto">
+        <h2 class="text-3xl font-extrabold text-blue-950 mb-6 text-center">Tabla comparativa de Especificaciones tecnicas </h2>
+        <table class="w-full min-w-[700px] bg-white border border-blue-200 rounded-xl shadow-md overflow-hidden text-left">
+            <thead class="bg-blue-900 text-white">
                 <tr>
-                    <th>Equipo</th>
-                    <th>Codigo</th>
-                    <th>Tension nominal</th>
-                    <th>Capacidad</th>
-                    <th>Norma tecnica</th>
-                    <th>Estado de homologacion</th>
+                    <th class="py-3.5 px-4 font-semibold text-sm uppercase tracking-wider">Equipo</th>
+                    <th class="py-3.5 px-4 font-semibold text-sm uppercase tracking-wider">Codigo</th>
+                    <th class="py-3.5 px-4 font-semibold text-sm uppercase tracking-wider">Tension nominal</th>
+                    <th class="py-3.5 px-4 font-semibold text-sm uppercase tracking-wider">Capacidad</th>
+                    <th class="py-3.5 px-4 font-semibold text-sm uppercase tracking-wider">Norma tecnica</th>
+                    <th class="py-3.5 px-4 font-semibold text-sm uppercase tracking-wider">Estado de homologacion</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>Panel solar de 50W</td>
-                    <td>01</td>
-                    <td>12V</td>
-                    <td>200Wh y 250Wh</td>
-                    <td>IEC 61215</td>
-                    <td>Válido / Certificado</td>
+            <tbody class="divide-y divide-blue-100 text-blue-950 text-sm">
+                <tr class="hover:bg-blue-50/50 transition">
+                    <td class="py-3.5 px-4 font-medium">Panel solar de 50W</td>
+                    <td class="py-3.5 px-4">01</td>
+                    <td class="py-3.5 px-4">12V</td>
+                    <td class="py-3.5 px-4">200Wh y 250Wh</td>
+                    <td class="py-3.5 px-4">IEC 61215</td>
+                    <td class="py-3.5 px-4">Válido / Certificado</td>
                 </tr>
 
                 <tr>
-                    <td>Inversor solar hibrido 10kW HUAWEI</td>
-                    <td>02</td>
-                    <td>1.100V</td>
-                    <td>10kW</td>
-                    <td>IEC 61215</td>
-                    <td>Válido / Certificado</td>
+                    <td class="py-3.5 px-4 font-medium">Inversor solar hibrido 10kW HUAWEI</td>
+                    <td class="py-3.5 px-4">02</td>
+                    <td class="py-3.5 px-4">1.100V</td>
+                    <td class="py-3.5 px-4">10kW</td>
+                    <td class="py-3.5 px-4">IEC 61215</td>
+                    <td class="py-3.5 px-4">Válido / Certificado</td>
                 </tr>
 
                 <tr>
-                    <td>SQUARE-D breaker industrial POWERPACT 1000A 600V</td>
-                    <td>03</td>
-                    <td>1.100V</td>
-                    <td>20kW</td>
-                    <td>IEC 61215</td>
-                    <td>Válido / Certificado</td>
+                    <td class="py-3.5 px-4 font-medium">SQUARE-D breaker industrial POWERPACT 1000A 600V</td>
+                    <td class="py-3.5 px-4">03</td>
+                    <td class="py-3.5 px-4">1.100V</td>
+                    <td class="py-3.5 px-4">20kW</td>
+                    <td class="py-3.5 px-4">IEC 61215</td>
+                    <td class="py-3.5 px-4">Válido / Certificado</td>
                 </tr>
 
                 <tr>
-                    <td>Motor 4T 6.5Hp Gasolina Total Tgen16821</td>
-                    <td>04</td>
-                    <td>1.100V</td>
-                    <td>10kW</td>
-                    <td>IEC 61215</td>
-                    <td>Válido / Certificado</td>
+                    <td class="py-3.5 px-4 font-medium">Motor 4T 6.5Hp Gasolina Total Tgen16821</td>
+                    <td class="py-3.5 px-4">04</td>
+                    <td class="py-3.5 px-4">1.100V</td>
+                    <td class="py-3.5 px-4">10kW</td>
+                    <td class="py-3.5 px-4">IEC 61215</td>
+                    <td class="py-3.5 px-4">Válido / Certificado</td>
                 </tr>
 
                 <tr>
-                    <td>Generador electrico 800W 2T</td>
-                    <td>05</td>
-                    <td>1.100V</td>
-                    <td>10kW</td>
-                    <td>IEC 61215</td>
-                    <td>Válido / Certificado</td>
+                    <td class="py-3.5 px-4 font-medium">Generador electrico 800W 2T</td>
+                    <td class="py-3.5 px-4">05</td>
+                    <td class="py-3.5 px-4">1.100V</td>
+                    <td class="py-3.5 px-4">10kW</td>
+                    <td class="py-3.5 px-4">IEC 61215</td>
+                    <td class="py-3.5 px-4">Válido / Certificado</td>
                 </tr>
 
             </tbody>
         </table>
     </section>
 
-    <section id="contacto">
-        <form action="#", method="post", enctype="multipart/form-data">
-            <fieldset>
-                <legend>Formulario de Contacto</legend>
+    <section id="contacto" class="max-w-4xl mx-auto px-4 py-12">
+        <form action="#", method="post", enctype="multipart/form-data" class="bg-white rounded-2xl shadow-lg border border-blue-100 p-6 md:p-8">
+            <fieldset class="border border-blue-200 rounded-xl p-6 bg-blue-50/30 space-y-4">
+                <legend class="text-lg font-bold text-blue-950 px-3 bg-white rounded-md border border-blue-100 shadow-sm">Formulario de Contacto</legend>
             
-            <label>Nombre de la empresa </label>
-            <input type="text" name="nombre_empresa" id="nombre_empresa">
+            <label class="block text-sm font-semibold text-blue-950">Nombre de la empresa </label>
+            <input type="text" name="nombre_empresa" id="nombre_empresa" class="w-full bg-white border border-blue-200 rounded-lg px-4 py-2 text-blue-950 focus:outline-none focus:ring-2 focus:ring-blue-600 shadow-sm">
 
-            <label>RTN numerico</label>
-            <input type="text" name="rtn" id="RTN" >
+            <label class="block text-sm font-semibold text-blue-950">RTN numerico</label>
+            <input type="text" name="rtn" id="RTN" class="w-full bg-white border border-blue-200 rounded-lg px-4 py-2 text-blue-950 focus:outline-none focus:ring-2 focus:ring-blue-600 shadow-sm">
 
-            <label>Correo</label>
-            <input type="email" name="correo" id="correo">
+            <label class="block text-sm font-semibold text-blue-950">Correo</label>
+            <input type="email" name="correo" id="correo" class="w-full bg-white border border-blue-200 rounded-lg px-4 py-2 text-blue-950 focus:outline-none focus:ring-2 focus:ring-blue-600 shadow-sm">
 
-            <label>Telefono</label>
-            <input type="tel" name="telefono" id="telefono">
+            <label class="block text-sm font-semibold text-blue-950">Telefono</label>
+            <input type="tel" name="telefono" id="telefono" class="w-full bg-white border border-blue-200 rounded-lg px-4 py-2 text-blue-950 focus:outline-none focus:ring-2 focus:ring-blue-600 shadow-sm">
 
-            <label>Departamento de entrega</label>
-            <select>
+            <label class="block text-sm font-semibold text-blue-950">Departamento de entrega</label>
+            <select class="w-full bg-white border border-blue-200 rounded-lg px-4 py-2 text-blue-950 focus:outline-none focus:ring-2 focus:ring-blue-600 shadow-sm">
                 <option>Cortes</option>
                 <option>Francisco Morazan</option>
                 <option>Comayagua</option>
                 <option></option>
             </select>
 
-            <label>Acepta las condiciones</label>
-            <input type="checkbox" name="condiciones" id="condiciones">
+            <div class="flex items-center gap-2 pt-2">
+            <label class="text-sm font-medium text-blue-950">Acepta las condiciones</label>
+            <input type="checkbox" name="condiciones" id="condiciones" class="w-4 h-4 text-blue-900 border-blue-300 rounded focus:ring-blue-600">
+            </div>
 
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpiar</button>
+        
+            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <button type="submit" class="flex-1 bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-xl transition shadow-md cursor-pointer">Enviar</button>
+            <button type="reset" class="flex-1 bg-gray-200 hover:bg-gray-300 text-blue-950 font-bold py-3 px-6 rounded-xl transition shadow-sm cursor-pointer">Limpiar</button>
+            </div>
 
 
             </fieldset>
         </form>
     </section>
 
-    <footer>
-        <ul>
+    <footer class="bg-blue-950 text-blue-100 py-10 mt-12 border-t border-blue-900">
+        
+        <ul class="flex flex-col md:flex-row gap-4 md:gap-8 text-sm font-medium text-blue-200">
             <li>Ubicacion: Boulevard del Norte, SPS - Tel: 2551-5664</li>
             <li>Ubicacion: Anillo Periferico - Tel: 2535-5664</li>
         </ul>
-        <p>&copy; DEINSA HONDURAS | Todos los derechos reservados</p>
-        <p>Mellany Castellanos 20211002333</p>
+        <p class="text-xs text-blue-300">&copy; DEINSA HONDURAS | Todos los derechos reservados</p>
+        <p class="text-xs font-semibold text-yellow-400 tracking-wide">Mellany Castellanos 20211002333</p>
     </footer>
 </body>
 </html>
